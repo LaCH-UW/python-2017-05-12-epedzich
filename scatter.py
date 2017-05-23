@@ -31,7 +31,7 @@ def scatter_plot(x, y, x_line, y_line, names):
 
 
 def count_freq_and_len(fname):
-    with open(fname) as fp:
+    with open(fname, encoding='utf8') as fp:
         split_words = fp.read().split()
         freq_dist = FreqDist(split_words)
     return freq_dist, len(split_words)

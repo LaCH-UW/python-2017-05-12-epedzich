@@ -14,7 +14,7 @@ title5 = "ziemia-obiecana-tom-pierwszy.txt"
 
 def line_plot(data1, data2, data3, data4, data5, names):
     plt.title("Liczba wystąpień słów")
-    plt.xlabel("Próbki")
+    plt.xlabel("Wyrazy")
     plt.ylabel("Liczba wystąpień")
 
     plt.xticks(range(len(names)), names, rotation=90)
@@ -48,7 +48,6 @@ def color_lines(file1, file2, file3, file4, file5, words):
     freq3 = count_freq(file3)
     freq4 = count_freq(file4)
     freq5 = count_freq(file5)
-
 
     res1 = return_values(freq1, words)
     res2 = return_values(freq2, words)
